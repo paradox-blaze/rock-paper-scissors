@@ -1,7 +1,30 @@
-body{
+body {
+    margin: 0px;
     background-color: #1f2725;
 }
 
 button,img{
-    border-radius: 50%;
+    background-color: #1f2725;
+    border-color: #1f2725;
+    border:#1f2725;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 200px;
+    
+}
+.header {
+    display: flex;
+    font-size:50px ;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(24, 20, 20);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: goldenrod;
 }
