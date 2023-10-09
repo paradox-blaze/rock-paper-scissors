@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
@@ -15,8 +15,8 @@
         Rock-Paper-Scissors
     </div>
     <div class="gamedisplay">
-        <div class="userdisplay">?</div>
-        <div class="computerdisplay">?</div>
+        <div id="userdisplay">?</div>
+        <div id="computerdisplay">?</div>
     </div>
     <div class="names">
         <p>User</p>
@@ -24,18 +24,18 @@
     </div>
 
     <div class="points">
-        <p>0</p>
-        <p>0</p>
+        <p id="userpoints">0</p>
+        <p id="comppoints">0</p>
     </div>
 
-    <div class="statement">
+    <div id="statement">
         Choose your weapon...
     </div>
 
     <div class ="Buttons">
-        <button id="rock"><span>✊</span></button>
-        <button id="paper"><span>✋</span></button>
-        <button id="scissors"><span>✌️</span></button>
+        <button id="rock" onclick="gameRound('rock')"><span>✊</span></button>
+        <button id="paper" onclick="gameRound('paper')"><span>✋</span></button>
+        <button id="scissors" onclick="gameRound('scissors')"><span>✌️</span></button>
     </div>
 
 
